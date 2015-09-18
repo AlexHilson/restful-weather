@@ -14,6 +14,6 @@ Vagrant.configure(2) do |config|
    config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get install -y python-dev python-pip python-lxml
-     sudo pip install flask flask_restful beautifulsoup4 pep8
+     sudo pip install flask flask_restful beautifulsoup4 pep8 mock
    SHELL
 end
