@@ -29,4 +29,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     with open(args.config) as inf:
         services = yaml.load(inf.read())
-    metadata = harvest(services)
+    metadata = scrape(services)
